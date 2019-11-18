@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -14,6 +15,7 @@ public class RegistrationPage {
         $(By.cssSelector(".button[name='AddUser[add]']")).click();
         return $(By.cssSelector("[style='color: #a94442;background-color: #f2dede;border: 1px solid #ebccd1;padding: 15px;border-radius: 4px;']")).getText();
     }
+    @Step("Заполняем поля авторизации")
     public void fillCredential(String fio, String city, String email, String password) {
         $(By.id("reg-field-fio")).sendKeys(fio);
         $(By.id("reg-field-city")).sendKeys(city);

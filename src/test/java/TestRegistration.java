@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import pages.Auth;
-import pages.Lk;
 import pages.RegistrationPage;
 
 
