@@ -15,7 +15,7 @@ public class Auth {
     }
     @Step("Создаем новый Аккаунт")
     public RegistrationPage createNewAccount() {
-        $(By.linkText("Создать новый аккаунт")).click();
+        $(By.xpath("//*[@id=\"layout\"]/div[2]/div/div/div[2]/div/div/form/div[4]/div[1]/a")).click();
         return new RegistrationPage();
     }
 
