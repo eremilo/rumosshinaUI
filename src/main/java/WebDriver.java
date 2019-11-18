@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class WebDriver {
     @BeforeClass
     public void WebDriver() {
-        //Configuration.browser = WebDriverRunner.CHROME;
-        //Configuration.browserSize = "1024x768"; //1920x1080
+        Configuration.browser = WebDriverRunner.CHROME;
+        Configuration.browserSize = "1024x768"; //1920x1080
         open("http://www.mos-shina.ru");
         WebDriverRunner.getWebDriver().manage().deleteAllCookies();
 

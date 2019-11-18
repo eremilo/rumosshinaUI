@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationPage {
     public RegistrationPage() {
-        $(By.cssSelector("title")).getText().contains("Регистрация");
+        //$(By.cssSelector("title")).getText().contains("Регистрация");
     }
 
     public String registrationButton (){
